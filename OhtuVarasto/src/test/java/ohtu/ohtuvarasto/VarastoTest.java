@@ -93,12 +93,12 @@ public class VarastoTest {
     
     @Test
     public void ottaminenMiinustaTilaa() {
-        varasto.lisaaVarastoon(8);
+        varasto.lisaaVarastoon(6);
 
         varasto.otaVarastosta(-10);
 
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
-        assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(6, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
